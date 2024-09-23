@@ -1,8 +1,8 @@
 import os
 import subprocess
-import generate_image
+from generate_image import *
 
-generate_image.add_text_to_image('image.jpg', 'output_image.jpg')
+add_text_to_image('image.jpg', 'output_image.jpg')
 
 
 def change_wallpaper(image_path):

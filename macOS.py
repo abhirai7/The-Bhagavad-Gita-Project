@@ -1,5 +1,8 @@
 import subprocess
 import os
+from generate_image import *
+
+add_text_to_image('image.jpg', 'output_image.jpg')
 
 def change_wallpaper(image_path):
     # Check if the file exists
@@ -19,5 +22,5 @@ def change_wallpaper(image_path):
     subprocess.run(script, shell=True, check=True)
 
 # Example usage
-image_path = '/path/to/your/image.jpg'  # Replace with the path to your image
+image_path = 'output_image.jpg'  # Replace with the path to your image
 change_wallpaper(image_path)
